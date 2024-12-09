@@ -8,8 +8,8 @@ init(autoreset=True)
 
 class Colors:
     COLORS = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA]
-    CYAN = Fore.CYAN  #primer color
-    RESET = Style.RESET_ALL #reset para el rainbow
+    CYAN = Fore.CYAN  # Primer color
+    RESET = Style.RESET_ALL  # Reset para el rainbow
 
 art = """
                      Subnet Wizard                       
@@ -97,7 +97,7 @@ def main_menu():
         elif option == '3':
             try:
                 ipv4_calculator = importlib.import_module("ipv4_calculadora")
-                run_calculator(ipv4_calculator, "ipv4_calculadora")
+                run_calculator(ipv4_calculator, "ipv4_calculator")  # Función corregida
             except ModuleNotFoundError:
                 print("Error: No se pudo encontrar 'ipv4_calculadora.py'")
         elif option == '4':
