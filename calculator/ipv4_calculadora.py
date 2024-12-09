@@ -1,4 +1,4 @@
-# ipv4_calculato.py
+# ipv4_calculator.py
 import ipaddress
 
 def get_ip_class(ip):
